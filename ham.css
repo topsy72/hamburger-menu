@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+  padding: 1em;
+  font-size: 100px;
+}
+
+.ham-menu {
+  width: 1em;
+  height: 1em;
+  padding: 0.2em;
+  background-color: #f04031;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.ham-menu div {
+  background-color: white;
+  width: 1em;
+  height: 0.2em;
+  margin-bottom: 0.2em;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.ham-menu.open .one {
+  -moz-transform: translateY(0.4em) rotate(45deg);
+  -webkit-transform: translateY(0.4em) rotate(45deg);
+  -o-transform: translateY(0.4em) rotate(45deg);
+  -ms-transform: translateY(0.4em) rotate(45deg);
+  transform: translateY(0.4em) rotate(45deg);
+}
+.ham-menu.open .two {
+  opacity: 0;
+}
+.ham-menu.open .three {
+  transform: translateY(-0.4em) rotate(-45deg);
+  -moz-transform: translateY(-0.4em) rotate(-45deg);
+  -webkit-transform: translateY(-0.4em) rotate(-45deg);
+  -o-transform: translateY(-0.4em) rotate(-45deg);
+  -ms-transform: translateY(-0.4em) rotate(-45deg);
+  transform: translateY(-0.4em) rotate(-45deg);
+}

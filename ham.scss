@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    padding:1em;
+    font-size:100px;
+}
+@mixin easy-out{
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.ham-menu{
+    width:1em;
+    height: 1em;
+    padding:0.2em;
+    background-color:#f04031;
+    cursor:pointer;
+    margin:0 auto;
+    div {
+        background-color: white;
+        width:1em;
+        height:0.2em;
+        margin-bottom:0.2em;
+        @include easy-out;
+    }
+    &.open{
+        .one{
+            -moz-transform: translateY(0.4em) rotate(45deg);
+            -webkit-transform: translateY(0.4em) rotate(45deg);
+            -o-transform: translateY(0.4em) rotate(45deg);
+            -ms-transform: translateY(0.4em) rotate(45deg);
+            transform: translateY(0.4em) rotate(45deg);
+        }     
+        .two{opacity:0;}   
+        .three{
+            transform: translateY(-0.4em) rotate(-45deg);
+            -moz-transform: translateY(-0.4em) rotate(-45deg);
+            -webkit-transform: translateY(-0.4em) rotate(-45deg);
+            -o-transform: translateY(-0.4em) rotate(-45deg);
+            -ms-transform: translateY(-0.4em) rotate(-45deg);
+            transform: translateY(-0.4em) rotate(-45deg);            
+        }
+    }
+}
