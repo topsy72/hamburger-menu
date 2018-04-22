@@ -1,4 +1,4 @@
 # hamburger-menu
 
 
-Simple hamburger manu written in scss. Small js script ham.js toggles button state.
+Simple hamburger menu written in scss. Small js script ham.js toggles button state.
