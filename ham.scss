@@ -3,6 +3,7 @@ body{
     padding:1em;
     font-size:100px;
 }
+/*main mixin*/
 @mixin easy-out{
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
